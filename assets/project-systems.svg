@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="Systems project artwork">
+  <rect width="900" height="540" fill="#081d36"/>
+  <g opacity=".18" stroke="#9dd9ff" stroke-width="2">
+    <path d="M0 90h900M0 180h900M0 270h900M0 360h900M0 450h900"/>
+    <path d="M90 0v540M180 0v540M270 0v540M360 0v540M450 0v540M540 0v540M630 0v540M720 0v540M810 0v540"/>
+  </g>
+  <rect x="205" y="118" width="490" height="304" rx="28" fill="#102b4d" stroke="#9dd9ff" stroke-width="6"/>
+  <rect x="255" y="168" width="390" height="204" rx="16" fill="#173d69"/>
+  <g fill="#9dd9ff">
+    <rect x="302" y="218" width="82" height="28" rx="6"/>
+    <rect x="410" y="218" width="188" height="28" rx="6"/>
+    <rect x="302" y="278" width="296" height="28" rx="6"/>
+    <rect x="302" y="338" width="148" height="28" rx="6"/>
+  </g>
+  <circle cx="650" cy="145" r="52" fill="#f26b3a"/>
+  <circle cx="212" cy="389" r="36" fill="#5e8c61"/>
+</svg>

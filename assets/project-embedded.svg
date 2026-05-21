@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="Embedded systems project artwork">
+  <rect width="900" height="540" fill="#081d36"/>
+  <rect x="170" y="96" width="560" height="348" rx="28" fill="#123e48"/>
+  <rect x="220" y="146" width="460" height="248" rx="18" fill="#f8faf8"/>
+  <rect x="270" y="196" width="150" height="148" rx="14" fill="#0f345f"/>
+  <rect x="462" y="196" width="168" height="42" rx="8" fill="#1f9bcf"/>
+  <rect x="462" y="260" width="168" height="42" rx="8" fill="#5e8c61"/>
+  <rect x="462" y="324" width="118" height="20" rx="8" fill="#d8a340"/>
+  <g stroke="#d8a340" stroke-width="10" stroke-linecap="round">
+    <path d="M245 166v-46M305 166v-46M365 166v-46M425 166v-46M485 166v-46M545 166v-46M605 166v-46M665 166v-46"/>
+    <path d="M245 420v-46M305 420v-46M365 420v-46M425 420v-46M485 420v-46M545 420v-46M605 420v-46M665 420v-46"/>
+  </g>
+  <circle cx="345" cy="270" r="44" fill="#9dd9ff"/>
+  <path d="M320 270h50M345 245v50" stroke="#081d36" stroke-width="14" stroke-linecap="round"/>
+</svg>

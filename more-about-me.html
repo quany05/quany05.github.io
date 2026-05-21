@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quan (Ethan) Yuan | More About Me</title>
+    <meta name="description" content="Sports, travel, and personal interests of Quan (Ethan) Yuan." />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css?v=41" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#intro" aria-label="Go to homepage">
+        <span class="brand-mark">QY</span>
+        <span>Quan (Ethan) Yuan's Homepage</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="More about me navigation">
+        <a href="index.html#intro">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="cv.html" class="nav-cta">CV</a>
+      </nav>
+    </header>
+
+    <main class="about-page-shell">
+      <aside class="profile-panel" aria-label="Profile">
+        <img class="profile-photo" src="assets/quan-yuan-photo.jpg?v=2" alt="Quan (Ethan) Yuan portrait" />
+
+        <div class="profile-copy">
+          <h1>Quan (Ethan) Yuan</h1>
+          <p class="profile-role">Computer Engineering Student @ Northwestern University</p>
+        </div>
+
+        <ul class="contact-list" aria-label="Contact and profile links">
+          <li>
+            <span class="contact-icon location-icon" aria-hidden="true"></span>
+            <span>
+              <a href="https://www.google.com/maps/place/Evanston,+IL">Evanston, IL</a>
+              /
+              <a href="https://www.google.com/maps/place/Champaign,+IL">Champaign, IL</a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-icon email-icon" aria-hidden="true"></span>
+            <a href="mailto:quanyuan2028@u.northwestern.edu">Email</a>
+          </li>
+          <li>
+            <span class="contact-icon instagram-icon" aria-hidden="true"></span>
+            <a href="https://www.instagram.com/ethan_yuan05/">Instagram</a>
+          </li>
+          <li>
+            <span class="contact-icon linkedin-icon" aria-hidden="true"></span>
+            <a href="https://www.linkedin.com/in/quan-yuan-526099337/">LinkedIn</a>
+          </li>
+          <li>
+            <span class="contact-icon github-icon" aria-hidden="true"></span>
+            <a href="https://github.com/quany05">Github</a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="about-shell">
+        <section class="about-hero">
+          <h1>More About Me</h1>
+        </section>
+
+        <section class="about-section">
+          <h2>Sports</h2>
+          <p>
+            I enjoy swimming and hiking, and I also love watching football matches. My favorite club is
+            <a href="https://fcbayern.com/en">FC Bayern Munich</a>. In 2019, I visited the
+            <a href="https://allianz-arena.com/en">Allianz Arena</a> in Munich, which was a memorable experience as a
+            Bayern fan.
+          </p>
+          <div class="about-photo-grid">
+            <figure class="about-photo">
+              <img src="assets/IMG_1295.HEIC.png" alt="Allianz Arena in Munich" />
+              <figcaption>Munich · July 2019</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/cincinnati-bayern-2025.png" alt="FC Bayern Munich match in Cincinnati" />
+              <figcaption>Cincinnati · June 2025</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <h2>Travelling</h2>
+          <p>
+            I also love travelling. I have visited many well-known destinations across China, as well as places in
+            Europe, Canada, and the United States. Travelling gives me a chance to see different landscapes, cultures,
+            and ways of life up close.
+          </p>
+          <div class="about-photo-grid">
+            <figure class="about-photo">
+              <img src="assets/IMG_6856.HEIC.png" alt="Chicago Cloud Gate" />
+              <figcaption>Chicago · July 2025</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/IMG_7265.HEIC.png" alt="Great Smoky Mountains National Park" />
+              <figcaption>Great Smoky Mountains National Park · July 2025</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/IMG_5121.HEIC.png" alt="Yosemite National Park" />
+              <figcaption>Yosemite National Park · November 2025</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/IMG_1563.HEIC.png" alt="San Diego coast" />
+              <figcaption>San Diego · March 2026</figcaption>
+            </figure>
+          </div>
+
+          <section class="travel-map" aria-labelledby="travel-map-title">
+            <div class="travel-map-header">
+              <h3 id="travel-map-title">Cities I have been to</h3>
+              <div class="map-legend" aria-label="City marker color legend">
+                <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+                <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+                <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+              </div>
+            </div>
+
+            <div class="world-map-frame">
+              <svg class="world-map-img" viewBox="0 0 1000 500" aria-hidden="true">
+                <rect width="1000" height="500"></rect>
+                <image href="assets/world-natural-earth.svg?v=2" width="1000" height="500" preserveAspectRatio="none"></image>
+              </svg>
+              <svg class="city-overlay" viewBox="0 0 1000 500" aria-label="Visited city markers" data-city-layer="world"></svg>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal-backdrop" id="china-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="china-map-title">
+        <button class="modal-close" type="button" aria-label="Close China map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="china-map-title">China</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/china-location-map.svg?v=6" alt="Blank map of China" />
+            <svg class="country-overlay" viewBox="0 0 100 68.75" role="img" aria-label="China map with visited city markers" data-city-layer="china"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="united-states-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="united-states-map-title">
+        <button class="modal-close" type="button" aria-label="Close United States map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="united-states-map-title">United States</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/usa-location-map.svg?v=6" alt="Blank map of the United States" />
+            <svg class="country-overlay" viewBox="0 0 100 52.1" role="img" aria-label="United States map with visited city marker" data-city-layer="united-states"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="canada-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="canada-map-title">
+        <button class="modal-close" type="button" aria-label="Close Canada map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="canada-map-title">Canada</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/canada-location-map.svg?v=6" alt="Blank map of Canada" />
+            <svg class="country-overlay" viewBox="0 0 100 34.64" role="img" aria-label="Canada map with visited city markers" data-city-layer="canada"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="germany-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="germany-map-title">
+        <button class="modal-close" type="button" aria-label="Close Germany map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="germany-map-title">Germany</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/germany-location-map.svg?v=6" alt="Blank map of Germany" />
+            <svg class="country-overlay" viewBox="0 0 100 80.39" role="img" aria-label="Germany map with visited city markers" data-city-layer="germany"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="france-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="france-map-title">
+        <button class="modal-close" type="button" aria-label="Close France map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="france-map-title">France</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/france-location-map.svg?v=6" alt="Blank map of France" />
+            <svg class="country-overlay" viewBox="0 0 100 68.63" role="img" aria-label="France map with visited city markers" data-city-layer="france"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="monaco-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="monaco-map-title">
+        <button class="modal-close" type="button" aria-label="Close Monaco map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="monaco-map-title">Monaco</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/monaco-location-map.svg?v=6" alt="Blank map of Monaco" />
+            <svg class="country-overlay" viewBox="0 0 100 67.86" role="img" aria-label="Monaco map with visited city marker" data-city-layer="monaco"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="italy-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="italy-map-title">
+        <button class="modal-close" type="button" aria-label="Close Italy map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="italy-map-title">Italy</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/italy-location-map.svg?v=6" alt="Blank map of Italy" />
+            <svg class="country-overlay" viewBox="0 0 100 86.92" role="img" aria-label="Italy map with visited city markers" data-city-layer="italy"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=27"></script>
+  </body>
+</html>

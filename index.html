@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quan (Ethan) Yuan | Homepage</title>
+    <meta
+      name="description"
+      content="Quan (Ethan) Yuan's academic portfolio for computer vision, robotics, AI, and embedded systems."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css?v=17" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#intro" aria-label="Go to intro">
+        <span class="brand-mark">QY</span>
+        <span>Quan (Ethan) Yuan's Homepage</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#intro">Intro</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">News</a>
+        <a href="cv.html" class="nav-cta">CV</a>
+        <a href="more-about-me.html" class="nav-cta">More About Me</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <aside class="profile-panel" aria-label="Profile">
+        <img class="profile-photo" src="assets/quan-yuan-photo.jpg?v=2" alt="Quan (Ethan) Yuan portrait" />
+
+        <div class="profile-copy">
+          <h1>Quan (Ethan) Yuan</h1>
+          <p class="profile-role">Computer Engineering Student @ Northwestern University</p>
+        </div>
+
+        <ul class="contact-list" aria-label="Contact and profile links">
+          <li>
+            <span class="contact-icon location-icon" aria-hidden="true"></span>
+            <span>
+              <a href="https://www.google.com/maps/place/Evanston,+IL">Evanston, IL</a>
+              /
+              <a href="https://www.google.com/maps/place/Champaign,+IL">Champaign, IL</a>
+            </span>
+          </li>
+          <li>
+            <span class="contact-icon email-icon" aria-hidden="true"></span>
+            <a href="mailto:quanyuan2028@u.northwestern.edu">Email</a>
+          </li>
+          <li>
+            <span class="contact-icon instagram-icon" aria-hidden="true"></span>
+            <a href="https://www.instagram.com/ethan_yuan05/">Instagram</a>
+          </li>
+          <li>
+            <span class="contact-icon linkedin-icon" aria-hidden="true"></span>
+            <a href="https://www.linkedin.com/in/quan-yuan-526099337/">LinkedIn</a>
+          </li>
+          <li>
+            <span class="contact-icon github-icon" aria-hidden="true"></span>
+            <a href="https://github.com/quany05">Github</a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="content-flow">
+        <section class="intro-section" id="intro">
+          <div class="intro-copy">
+            <p class="section-kicker">Welcome</p>
+            <div class="intro-text">
+              <p>
+                I am Quan (Ethan) Yuan, a Computer Engineering student with experience across computer vision research,
+                embedded systems, PCB design, and FPGA game development. I studied at the
+                <a href="https://ece.illinois.edu/">University of Illinois Urbana-Champaign</a> from 2024 to 2026 and
+                will continue my B.S. in Computer Engineering at
+                <a href="https://www.mccormick.northwestern.edu/electrical-computer/">Northwestern University</a> in
+                September 2026.
+              </p>
+              <p>
+                My work tends to sit close to the metal: CUDA/PyTorch pipelines for 3D Gaussian Splatting, embedded C++
+                control logic for solar car systems, SystemVerilog games on FPGA, and STM32 projects that connect
+                sensors, actuators, and custom boards.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block" id="research">
+          <div class="section-heading">
+            <p class="section-kicker">Research</p>
+            <h2>Research Interests</h2>
+          </div>
+          <div class="research-layout">
+            <div>
+              <p>
+                I am interested in building intelligent systems that connect perception, robotics, and efficient
+                computing, with work spanning:
+              </p>
+              <ul class="interest-list">
+                <li>Computer Vision</li>
+                <li>Robotics</li>
+                <li>AI</li>
+                <li>GPU Computing</li>
+                <li>Embedded Systems</li>
+              </ul>
+              <p>
+                I have research experience in computer vision and graphics, especially 3D Gaussian Splatting, where I
+                worked on contribution-based filtering for more efficient rendering.
+              </p>
+            </div>
+            <article
+              class="project-card accent-cyan research-project-card"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="research-modal"
+              aria-label="Show details for 3D Gaussian Splatting Renderer Optimization"
+              data-modal-target="research-modal"
+            >
+              <img src="assets/3dgs-evaluation.jpg" alt="3D Gaussian Splatting evaluation screenshot" />
+              <div class="project-copy">
+                <span class="tag">Computer Vision Research</span>
+                <h3>3D Gaussian Splatting Renderer Optimization</h3>
+                <p>CUDA/PyTorch pipeline for contribution scoring, GPU-side sorting, pruning, and progressive rendering.</p>
+                <span class="card-action">View Details</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="experience">
+          <div class="section-heading row-heading">
+            <div>
+              <p class="section-kicker">Background</p>
+              <h2>Experience & Education</h2>
+            </div>
+            <a class="text-link" href="cv.html">Full CV</a>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <time>Sept 2026 - Jun 2028</time>
+              <div>
+                <h3>B.S. in Computer Engineering, Northwestern University</h3>
+                <p>Incoming Computer Engineering student in Evanston, Illinois.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Aug 2024 - May 2026</time>
+              <div>
+                <h3>B.S. in Computer Engineering, UIUC</h3>
+                <p>Overall GPA 4.0/4.0. Dean's List and James Scholar.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>May 2025 - Aug 2025</time>
+              <div>
+                <h3>Undergraduate Research Assistant, Computer Vision & Graphics | Advisor: <a href="https://sadve.cs.illinois.edu/">Prof. Sarita Adve</a></h3>
+                <p>Built CUDA/PyTorch contribution scoring and pruning pipelines for 3D Gaussian Splatting.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Jan 2026 - May 2026</time>
+              <div>
+                <h3>Undergraduate Grader for ECE 220: Computer Systems & Programming</h3>
+                <p>Evaluated programming assignments and exams while reviewing student code for logic errors and optimization opportunities.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Sept 2025 - May 2026</time>
+              <div>
+                <h3>Undergraduate Grader for ECE 120: Introduction to Computing</h3>
+                <p>Graded homework assignments and quizzes while giving feedback to help students understand core computing concepts.</p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <time>Sept 2024 - Aug 2025</time>
+              <div>
+                <h3>Electrical Team Member, <a href="https://www.illinisolarcar.com/">Illini Solar Car</a></h3>
+                <p>Implemented embedded C++ control logic, designed and soldered PCBs, and helped integrate vehicle subsystems.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="projects">
+          <div class="section-heading row-heading">
+            <div>
+              <p class="section-kicker">Selected Work</p>
+              <h2>Projects</h2>
+            </div>
+            <a class="text-link" href="cv.html">More Details</a>
+          </div>
+
+          <div class="project-grid">
+            <article
+              class="project-card accent-orange modal-trigger"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="fpga-modal"
+              aria-label="Show details for Terraria-Inspired FPGA Game"
+              data-modal-target="fpga-modal"
+            >
+              <img class="fpga-card-image" src="assets/fpga-card-crop.png" alt="Terraria-inspired FPGA game screenshot" />
+              <div class="project-copy">
+                <span class="tag">FPGA</span>
+                <h3><a class="project-title-link" href="https://github.com/quany05/Terraria_Inspired_Game">Terraria-Inspired FPGA Game</a></h3>
+                <p>Side-scrolling FPGA game built with SystemVerilog, MicroBlaze C, AXI4-Lite, HDMI output, and USB keyboard input; selected for the ECE 385 Final Project Showcase.</p>
+                <span class="card-action">View Details</span>
+              </div>
+            </article>
+            <article
+              class="project-card accent-green modal-trigger"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="solar-modal"
+              aria-label="Show details for Illini Solar Car Control Subsystems"
+              data-modal-target="solar-modal"
+            >
+              <img src="assets/solar-card.png" alt="Illini Solar Car on track" />
+              <div class="project-copy">
+                <span class="tag">Solar Vehicle</span>
+                <h3>Illini Solar Car Control Subsystems</h3>
+                <p>Embedded C++ logic, custom PCBs, and subsystem integration; won 1st place in the SOV Class at Formula Sun Grad Prix 2025.</p>
+                <span class="card-action">View Details</span>
+              </div>
+            </article>
+            <article
+              class="project-card accent-green modal-trigger"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="radar-modal"
+              aria-label="Show details for Radar Sensing System"
+              data-modal-target="radar-modal"
+            >
+              <img src="assets/IMG_4055.HEIC.png" alt="Radar sensing system hardware project" />
+              <div class="project-copy">
+                <span class="tag">Hardware</span>
+                <h3>Radar Sensing System</h3>
+                <p>Ultrasonic distance-mapping system using a stepper motor, analog circuits, and LED matrix visualization for obstacle detection.</p>
+                <span class="card-action">View Details</span>
+              </div>
+            </article>
+            <article
+              class="project-card accent-gold modal-trigger"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-controls="stm32-modal"
+              aria-label="Show details for STM32 Project"
+              data-modal-target="stm32-modal"
+            >
+              <img class="stm32-card-image" src="assets/stm32-card-crop.png?v=3" alt="STM32 Mecanum-wheel car project" />
+              <div class="project-copy">
+                <span class="tag">Embedded Systems</span>
+                <h3>STM32 Project</h3>
+                <p>OLED game, Mecanum-wheel car, and magnetic levitation system with SPI/I2C, sensors, actuators, and PCBs.</p>
+                <span class="card-action">View Details</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block" id="news">
+          <div class="section-heading">
+            <p class="section-kicker">Updates</p>
+            <h2>News</h2>
+          </div>
+          <ul class="news-list">
+            <li><time>May 2026</time><span>I built this personal website.</span></li>
+            <li><time>May 2026</time><span>My <a href="https://github.com/quany05/Terraria_Inspired_Game">Terraria-inspired FPGA game</a> was selected for the ECE 385 Final Project Showcase!</span></li>
+            <li><time>Apr 2026</time><span>I was admitted to Northwestern University. Go Wildcats! 💜</span></li>
+            <li><time>Apr 2026</time><span>I received the Grainger Engineering Scholarship!</span></li>
+            <li><time>Jan 2026</time><span>I started serving as an undergraduate grader for ECE 220.</span></li>
+            <li><time>Sept 2025</time><span>I started serving as an undergraduate grader for ECE 120.</span></li>
+            <li><time>Jul 2025</time><span>My team and I won 1st place in the SOV Class at Formula Sun Grand Prix 2025 with Illini Solar Car!</span></li>
+            <li><time>May 2025</time><span>I started computer vision and graphics research on 3D Gaussian Splatting rendering optimization.</span></li>
+            <li><time>Sept 2024</time><span>I joined Illini Solar Car as an electrical team member.</span></li>
+            <li><time>Aug 2024</time><span>I started my freshman year at UIUC! 🧡💙</span></li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Quan (Ethan) Yuan. Built for GitHub Pages.</p>
+    </footer>
+
+    <div class="modal-backdrop" id="research-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="research-modal-title">
+        <button class="modal-close" type="button" aria-label="Close research details">&times;</button>
+        <img class="modal-image" src="assets/3dgs-evaluation.jpg" alt="Expanded 3D Gaussian Splatting evaluation screenshot" />
+        <div class="modal-copy">
+          <h2 id="research-modal-title">Computer Vision & Graphics Research</h2>
+          <p class="detail-meta">Undergraduate Research Assistant | May 2025 - Aug 2025 | Advisor: <a href="https://sadve.cs.illinois.edu/">Prof. Sarita Adve</a></p>
+          <ul class="detail-list">
+            <li>Built a CUDA/PyTorch pipeline to compute per-Gaussian contribution scores using opacity, volume, and spatial metrics for selective rendering.</li>
+            <li>Implemented GPU kernels to sort Gaussians by contribution and prune low-impact points to minimize rasterization cost.</li>
+            <li>Integrated contribution-based filtering into the 3DGS renderer, enabling progressive rendering with lower compute overhead while preserving visual quality.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="fpga-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="fpga-modal-title">
+        <button class="modal-close" type="button" aria-label="Close FPGA project details">&times;</button>
+        <img class="modal-image" src="assets/fpga-modal.png" alt="Expanded Terraria-inspired FPGA game screenshot" />
+        <div class="modal-copy">
+          <h2 id="fpga-modal-title"><a href="https://github.com/quany05/Terraria_Inspired_Game">Terraria-Inspired FPGA Game</a></h2>
+          <p class="detail-meta">FPGA | Feb 2026 - May 2026 | ECE 385 Final Project Showcase</p>
+          <ul class="detail-list">
+            <li>Developed a Terraria-inspired side-scrolling FPGA game using SystemVerilog, MicroBlaze C, AXI4-Lite, HDMI output, and USB keyboard input.</li>
+            <li>Implemented real-time hardware rendering for scrolling backgrounds, tile maps, animated sprites, HUD elements, enemies, item drops, and boss graphics.</li>
+            <li>Selected for the ECE 385 Final Project Showcase as one of approximately 13 projects out of 200+ teams.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="solar-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="solar-modal-title">
+        <button class="modal-close" type="button" aria-label="Close solar car project details">&times;</button>
+        <img class="modal-image" src="assets/solar-modal.png" alt="Illini Solar Car team celebrating at the finish" />
+        <div class="modal-copy">
+          <h2 id="solar-modal-title">Illini Solar Car Control Subsystems</h2>
+          <p class="detail-meta">Electrical Team Member | Sept 2024 - Aug 2025 | Formula Sun Grand Prix 2025 SOV Class Winner</p>
+          <ul class="detail-list">
+            <li>Improved brake and control system reliability by implementing and refining embedded C++ control logic.</li>
+            <li>Designed, assembled, and soldered custom PCBs for signal routing, power regulation, and interface connections.</li>
+            <li>Collaborated with mechanical and electrical teams to integrate vehicle subsystems, contributing to a 1st-place SOV Class finish at Formula Sun Grand Prix 2025.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="stm32-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="stm32-modal-title">
+        <button class="modal-close" type="button" aria-label="Close STM32 project details">&times;</button>
+        <img class="modal-image" src="assets/stm32-modal.png" alt="Expanded STM32 embedded systems project photo" />
+        <div class="modal-copy">
+          <h2 id="stm32-modal-title">STM32 Project</h2>
+          <p class="detail-meta">Embedded Systems | Sept 2023 - Aug 2024</p>
+          <ul class="detail-list">
+            <li>Built STM32-based embedded projects including an OLED game, Mecanum-wheel car, and magnetic levitation system.</li>
+            <li>Programmed C control logic for sensors, motors, OLED display, wireless control, and actuator feedback.</li>
+            <li>Designed and tested supporting circuits and PCBs while integrating SPI/I2C peripherals with hardware subsystems.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="radar-modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="radar-modal-title">
+        <button class="modal-close" type="button" aria-label="Close radar sensing system details">&times;</button>
+        <img class="modal-image" src="assets/IMG_4055.HEIC.png" alt="Expanded radar sensing system hardware project photo" />
+        <div class="modal-copy">
+          <h2 id="radar-modal-title">Radar Sensing System</h2>
+          <p class="detail-meta">Hardware Project | Sept 2024 - May 2025</p>
+          <ul class="detail-list">
+            <li>Built a radar sensing system using an ultrasonic sensor, stepper motor, analog circuits, and LED matrix visualization for distance mapping and obstacle detection.</li>
+            <li>Designed digital logic and analog control circuits using flip-flops, decoders, counters, comparators, logic gates, and LM555 timers.</li>
+            <li>Simulated, debugged, and validated circuit behavior using oscilloscopes and function generators.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=5"></script>
+  </body>
+</html>

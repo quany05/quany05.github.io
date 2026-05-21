@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="AI project artwork">
+  <rect width="900" height="540" fill="#102235"/>
+  <circle cx="152" cy="104" r="66" fill="#f26b3a" opacity=".85"/>
+  <circle cx="738" cy="424" r="92" fill="#1f9bcf" opacity=".75"/>
+  <g fill="none" stroke="#f8faf8" stroke-linecap="round" stroke-width="10">
+    <path d="M307 182c58-78 158-78 216 0s158 78 216 0"/>
+    <path d="M240 270c58-78 158-78 216 0s158 78 216 0"/>
+    <path d="M307 358c58-78 158-78 216 0s158 78 216 0"/>
+  </g>
+  <g fill="#d8a340">
+    <circle cx="307" cy="182" r="18"/>
+    <circle cx="523" cy="182" r="18"/>
+    <circle cx="739" cy="182" r="18"/>
+    <circle cx="240" cy="270" r="18"/>
+    <circle cx="456" cy="270" r="18"/>
+    <circle cx="672" cy="270" r="18"/>
+    <circle cx="307" cy="358" r="18"/>
+    <circle cx="523" cy="358" r="18"/>
+    <circle cx="739" cy="358" r="18"/>
+  </g>
+</svg>
