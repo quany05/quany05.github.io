@@ -864,6 +864,22 @@ body.modal-open {
   line-height: 1.2;
 }
 
+.map-helper {
+  margin: 10px 0 0;
+  color: #5f6f7f;
+  font-size: clamp(0.84rem, 1.35vw, 0.95rem);
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.map-helper-below {
+  text-align: center;
+}
+
+.country-map-helper {
+  margin-top: 8px;
+}
+
 .legend-dot {
   width: 0.78em;
   height: 0.78em;
