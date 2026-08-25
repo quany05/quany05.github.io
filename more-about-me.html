@@ -29,7 +29,7 @@
 
     <main class="about-page-shell">
       <aside class="profile-panel" aria-label="Profile">
-        <img class="profile-photo" src="assets/quan-yuan-photo.jpg?v=2" alt="Quan (Ethan) Yuan portrait" />
+        <img class="profile-photo" src="assets/quan-yuan-photo-kyoto.jpg" alt="Quan (Ethan) Yuan portrait" />
 
         <div class="profile-copy">
           <h1>Quan (Ethan) Yuan</h1>
@@ -98,20 +98,39 @@
           </p>
           <div class="about-photo-grid">
             <figure class="about-photo">
-              <img src="assets/IMG_6856.HEIC.png" alt="Chicago Cloud Gate" />
-              <figcaption>Chicago · July 2025</figcaption>
+              <img
+                src="assets/travel-kamakura-aug-2026.jpg"
+                alt="Quan Yuan at the Kamakura coast with Mount Fuji at sunset"
+              />
+              <figcaption>Kamakura · August 2026</figcaption>
+            </figure>
+            <figure class="about-photo about-photo--portrait">
+              <img src="assets/travel-tokyo-aug-2026.jpg" alt="Tokyo Tower viewed from below" />
+              <figcaption>Tokyo · August 2026</figcaption>
             </figure>
             <figure class="about-photo">
-              <img src="assets/IMG_7265.HEIC.png" alt="Great Smoky Mountains National Park" />
-              <figcaption>Great Smoky Mountains National Park · July 2025</figcaption>
+              <img src="assets/travel-nara-aug-2026.jpg" alt="Quan Yuan with deer in Nara" />
+              <figcaption>Nara · August 2026</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/travel-kyoto-aug-2026.jpg" alt="Quan Yuan at Kiyomizu-dera in Kyoto" />
+              <figcaption>Kyoto · August 2026</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/IMG_1563.HEIC.png" alt="San Diego coast" />
+              <figcaption>San Diego · March 2026</figcaption>
             </figure>
             <figure class="about-photo">
               <img src="assets/IMG_5121.HEIC.png" alt="Yosemite National Park" />
               <figcaption>Yosemite National Park · November 2025</figcaption>
             </figure>
             <figure class="about-photo">
-              <img src="assets/IMG_1563.HEIC.png" alt="San Diego coast" />
-              <figcaption>San Diego · March 2026</figcaption>
+              <img src="assets/IMG_6856.HEIC.png" alt="Chicago Cloud Gate" />
+              <figcaption>Chicago · July 2025</figcaption>
+            </figure>
+            <figure class="about-photo">
+              <img src="assets/IMG_7265.HEIC.png" alt="Great Smoky Mountains National Park" />
+              <figcaption>Great Smoky Mountains National Park · July 2025</figcaption>
             </figure>
           </div>
 
@@ -271,6 +290,25 @@
       </div>
     </div>
 
-    <script src="script.js?v=27"></script>
+    <div class="modal-backdrop" id="japan-map-modal" aria-hidden="true">
+      <div class="modal-dialog country-map-dialog" role="dialog" aria-modal="true" aria-labelledby="japan-map-title">
+        <button class="modal-close" type="button" aria-label="Close Japan map">&times;</button>
+        <div class="country-map-copy">
+          <h2 id="japan-map-title">Japan</h2>
+          <div class="map-legend" aria-label="City marker color legend">
+            <span><i class="legend-dot legend-dot-blue"></i>Blue: one visit</span>
+            <span><i class="legend-dot legend-dot-orange"></i>Orange: 2+ visits</span>
+            <span><i class="legend-dot legend-dot-red"></i>Red: long-term residence</span>
+          </div>
+          <p class="map-helper country-map-helper">Hover or tap a marker to view the city, date, and note.</p>
+          <div class="country-map-frame">
+            <img class="country-map-img" src="assets/japan-location-map.svg?v=2" alt="Blank map of Japan" />
+            <svg class="country-overlay" viewBox="0 0 100 92.50" role="img" aria-label="Japan map with visited city markers" data-city-layer="japan"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=28"></script>
   </body>
 </html>

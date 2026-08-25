@@ -78,7 +78,7 @@ const visitedCities = [
   { name: "Wuxi", lat: 31.4912, lon: 120.3119, country: "china", color: "red", note: "since Sept 2005 lived here" },
   { name: "Shanghai", lat: 31.2304, lon: 121.4737, country: "china", color: "orange", note: "multiple times since 2006" },
   { name: "Suzhou", lat: 31.2989, lon: 120.5853, country: "china", color: "orange", note: "multiple times since 2022" },
-  { name: "Hangzhou", lat: 30.2741, lon: 120.1551, country: "china", color: "blue", note: "Aug 2012" },
+  { name: "Hangzhou", lat: 30.2741, lon: 120.1551, country: "china", color: "orange", note: "Aug 2012, Jun 2026, Jul 2026" },
   { name: "Wuhan", lat: 30.5928, lon: 114.3055, country: "china", color: "blue", note: "Jul 2009" },
   { name: "Changsha", lat: 28.2282, lon: 112.9388, country: "china", color: "blue", note: "Jul 2009" },
   { name: "Harbin", lat: 45.8038, lon: 126.5349, country: "china", color: "blue", note: "Jan 2013" },
@@ -86,7 +86,7 @@ const visitedCities = [
   { name: "Lijiang", lat: 26.8565, lon: 100.2279, country: "china", color: "blue", note: "Jul 2014" },
   { name: "Dali", lat: 25.6065, lon: 100.2676, country: "china", color: "blue", note: "Jul 2014" },
   { name: "Kunming", lat: 25.0389, lon: 102.7183, country: "china", color: "blue", note: "Jul 2014" },
-  { name: "Guangzhou", lat: 23.1291, lon: 113.2644, country: "china", color: "blue", note: "Jan 2015" },
+  { name: "Guangzhou", lat: 23.1291, lon: 113.2644, country: "china", color: "orange", note: "Jan 2015, Jul 2026" },
   { name: "Huangshan", lat: 29.7147, lon: 118.3375, country: "china", color: "blue", note: "Jan 2016" },
   { name: "Dunhuang", lat: 40.1421, lon: 94.6619, country: "china", color: "blue", note: "Jul 2015" },
   { name: "Xining", lat: 36.6171, lon: 101.7781, country: "china", color: "blue", note: "Jul 2015" },
@@ -97,12 +97,21 @@ const visitedCities = [
   { name: "Shijiazhuang", lat: 38.0428, lon: 114.5149, country: "china", color: "blue", note: "Jul 2010" },
   { name: "Changzhou", lat: 31.8107, lon: 119.9741, country: "china", color: "blue", note: "Apr 2019" },
   { name: "Nanjing", lat: 32.0603, lon: 118.7969, country: "china", color: "blue", note: "Jun 2018" },
-  { name: "Shunde", lat: 22.8058, lon: 113.2939, country: "china", color: "blue", note: "Aug 2024" },
-  { name: "Chaozhou", lat: 23.6567, lon: 116.6226, country: "china", color: "blue", note: "Aug 2024" },
-  { name: "Shantou", lat: 23.3541, lon: 116.6819, country: "china", color: "blue", note: "Aug 2024" },
+  { name: "Zhuhai", lat: 22.2707, lon: 113.5767, country: "china", color: "blue", note: "Jul 2026" },
+  { name: "Zhongshan", lat: 22.5176, lon: 113.3928, country: "china", color: "blue", note: "Jul 2026" },
+  { name: "Shunde", lat: 22.8058, lon: 113.2939, country: "china", color: "orange", note: "Aug 2024, Jul 2026" },
+  { name: "Jiangmen", lat: 22.5787, lon: 113.0819, country: "china", color: "blue", note: "Jul 2026" },
+  { name: "Shenzhen", lat: 22.5431, lon: 114.0579, country: "china", color: "blue", note: "Jul 2026" },
+  { name: "Jieyang", lat: 23.5497, lon: 116.3727, country: "china", color: "blue", note: "Jul 2026" },
+  { name: "Chaozhou", lat: 23.6567, lon: 116.6226, country: "china", color: "orange", note: "Aug 2024, Jul 2026" },
+  { name: "Shantou", lat: 23.3541, lon: 116.6819, country: "china", color: "orange", note: "Aug 2024, Jul 2026" },
   { name: "Guilin", lat: 25.2736, lon: 110.2900, country: "china", color: "blue", note: "Aug 2023" },
   { name: "Hong Kong", lat: 22.3193, lon: 114.1694, country: "china", color: "orange", note: "multiple times since 2023" },
   { name: "Macau", lat: 22.1987, lon: 113.5439, country: "china", color: "orange", note: "Dec 2022, Jun 2023" },
+  { name: "Kyoto", lat: 35.0116, lon: 135.7681, country: "japan", color: "blue", note: "Aug 2026" },
+  { name: "Nara", lat: 34.6851, lon: 135.8048, country: "japan", color: "blue", note: "Aug 2026" },
+  { name: "Tokyo", lat: 35.6762, lon: 139.6503, country: "japan", color: "blue", note: "Aug 2026" },
+  { name: "Kamakura", lat: 35.3192, lon: 139.5467, country: "japan", color: "blue", note: "Aug 2026" },
   { name: "Heidelberg", lat: 49.3988, lon: 8.6724, country: "germany", color: "blue", note: "July 2019" },
   { name: "Frankfurt", lat: 50.1109, lon: 8.6821, country: "germany", color: "blue", note: "July 2019" },
   { name: "Stuttgart", lat: 48.7758, lon: 9.1829, country: "germany", color: "blue", note: "July 2019" },
@@ -151,6 +160,7 @@ const geoCountryBounds = {
   france: { north: 51.5, south: 41.0, west: -5.5, east: 9.8 },
   monaco: { north: 44.25, south: 43.30, west: 6.75, east: 8.15 },
   italy: { north: 47.6, south: 36.3, west: 6.0, east: 19.0 },
+  japan: { north: 46.2, south: 24.0, west: 122.5, east: 146.5 },
 };
 
 const geoCountryMaps = Object.fromEntries(
@@ -166,6 +176,7 @@ const projectCity = {
   france: geoCountryMaps.france.project,
   monaco: geoCountryMaps.monaco.project,
   italy: geoCountryMaps.italy.project,
+  japan: geoCountryMaps.japan.project,
 };
 
 const countryModalId = {
@@ -176,6 +187,7 @@ const countryModalId = {
   france: "france-map-modal",
   monaco: "monaco-map-modal",
   italy: "italy-map-modal",
+  japan: "japan-map-modal",
 };
 
 const countryName = {
@@ -186,6 +198,7 @@ const countryName = {
   france: "France",
   monaco: "Monaco",
   italy: "Italy",
+  japan: "Japan",
 };
 
 const cityColorPriority = {

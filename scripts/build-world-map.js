@@ -217,18 +217,36 @@ const countryMapDefinitions = {
     bounds: { north: 47.6, south: 36.3, west: 6.0, east: 19.0 },
     boundaryLevel: "region",
   },
+  japan: {
+    title: "Japan",
+    target: "Japan",
+    file: "japan-location-map.svg",
+    bounds: { north: 46.2, south: 24.0, west: 122.5, east: 146.5 },
+    boundaryLevel: "region",
+    regionOverrides: {
+      Saga: "Kyushu",
+      "Saga Prefecture": "Kyushu",
+      Nagasaki: "Kyushu",
+      "Nagasaki Prefecture": "Kyushu",
+    },
+  },
 };
 
 const normalizeName = (value) => String(value || "").trim().replace(/\s+/g, " ");
 
-const regionLookupForCountry = (country) => {
+const regionLookupForCountry = (country, regionOverrides = {}) => {
   const lookup = new Map();
 
   admin1PolygonGeojson.features
     .filter((feature) => feature.properties?.admin === country)
     .forEach((feature) => {
       const properties = feature.properties;
-      const region = normalizeName(properties.region || properties.name);
+      const region = normalizeName(
+        regionOverrides[properties.name] ||
+          regionOverrides[properties.name_en] ||
+          properties.region ||
+          properties.name,
+      );
       const names = [
         properties.name,
         properties.name_en,
@@ -248,7 +266,9 @@ const adminBoundaryPaths = (definition, crop) => {
   if (definition.boundaryLevel === "none") return "";
 
   const regionLookup =
-    definition.boundaryLevel === "region" ? regionLookupForCountry(definition.target) : null;
+    definition.boundaryLevel === "region"
+      ? regionLookupForCountry(definition.target, definition.regionOverrides)
+      : null;
   const seen = new Set();
 
   return admin1LineGeojson.features
